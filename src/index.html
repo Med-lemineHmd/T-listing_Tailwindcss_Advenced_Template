@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T-listing</title>
-    <link rel="stylesheet" href="../dist/css/output.css" />
     <!-- Google Fonts Icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
+    <link rel="stylesheet" href="../dist/css/output.css" />
   </head>
   <body>
     <!-- Start NavBar ...............................................................-->
@@ -1014,8 +1014,12 @@
         <div class="w-8/12 mx-auto">
           <div class="flex items-center gap-3">
             <div class="w-1/2">
-              <div class="food w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-30"></div>
-              <div class="w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"></div>
+              <div
+                class="food w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-30"
+              ></div>
+              <div
+                class="w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"
+              ></div>
               <div class="flex gap-12">
                 <div class="flex flex-col gap-12">
                   <div class="relative">
@@ -1107,7 +1111,9 @@
                 <button
                   class="mr-4 py-2 px-3 border-2 bg-blue-500 border-blue-500 fon-semibold text-white shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 rounded-md"
                 >
-                  <span class="material-symbols-outlined align-middle mr-1"> lightbulb </span>
+                  <span class="material-symbols-outlined align-middle mr-1">
+                    lightbulb
+                  </span>
                   Learn More
                 </button>
               </div>
@@ -1116,6 +1122,83 @@
         </div>
       </div>
       <!-- /Team -->
+      <!-- Start Testimonials  .................................................-->
+      <div class="bg-white py-36 relative z-10">
+        <div
+          class="bg-slate-50 w-8/12 absolute bottom-0 right-0 top-16 -z-10 rounded-tl-3xl"
+        ></div>
+        <div class="w-8/12 mx-auto">
+          <!-- Title -->
+          <div class="mb-20">
+            <p class="text-4xl font-bold font-libre text-gray-600 w-5/12">
+              What Our Customer Are Saying
+            </p>
+          </div>
+          <!-- /Title -->
+          <div class="flex">
+            <div class="w-1/2">
+              <div class="w-10/12 h-72 relative mb-6">
+                <div
+                  class="absolute dot opacity-30 h-48 w-32 -top-24 -left-16 -z-10"
+                ></div>
+                <div
+                  class="absolute dot opacity-30 h-48 w-32 -bottom-24 -right-16 -z-10"
+                ></div>
+                <div class="absolute z-10 -top-6 -right-6">
+                  <div
+                    class="bg-indigo-500 h-16 w-16 rounded-full flex items-center justify-center"
+                  >
+                    <span class="material-symbols-outlined text-white text-5xl">
+                      format_quote
+                    </span>
+                  </div>
+                </div>
+                <img
+                  class="w-full h-full object-cover rounded-md shadow-md"
+                  src="./assets/images/testimonials/testimonials.jpg"
+                  alt="testimonials"
+                />
+              </div>
+              <div class="flex gap-3">
+                <button
+                  class="flex items-center justify-center h-10 w-10 bg-amber-400 text-white shadow-md hover:shadow-xl rounded-full p-2"
+                >
+                  <span
+                    class="material-symbols-outlined align-middle text-3xl text-white"
+                  >
+                    chevron_left
+                  </span>
+                </button>
+                <button
+                  class="flex items-center justify-center h-10 w-10 bg-amber-400 text-white shadow-md hover:shadow-xl rounded-full p-2"
+                >
+                  <span
+                    class="material-symbols-outlined align-middle text-3xl text-white"
+                  >
+                    chevron_right
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="w-1/2 text-gray-600">
+              <p class="text-xl font-semibold capitalize mb-3">
+                Help Us Improve Our Productivity
+              </p>
+              <p class="mb-6">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam blanditiis, magni perferendis maiores ea ipsum. Numquam
+                totam iusto accusantium harum ducimus accusamus maiores maxime,
+                in nesciunt autem eaque voluptates cum?
+              </p>
+              <div>
+                <p class="font-bold text-lg">MO Team</p>
+                <p>Web Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /End Testimonials -->
     </div>
     <!-- /Body(Main-content) ...............................................................-->
   </body>
