@@ -19,33 +19,36 @@
         class="navbar absolute right-0 left-0 z-10 trans-nav text-white transition-all"
       >
         <div
-          class="w-9/12 mx-auto py-5 flex justify-between items-center font-comfortaa"
+          class="w-11/12 lg:w-10/12 xl:w-8/12 mx-auto py-5 flex justify-between items-center font-comfortaa"
         >
           <div>
-            <a class="text-lg" href="#">Tail Listing</a>
+            <a class="text-sm lg:text-lg" href="#">Tail Listing</a>
           </div>
           <div>
             <button
-              class="py-2 px-4 rounded-md border border-amber-500 bg-transparent hover:bg-amber-500 text-amber-500 hover:text-white transition-all"
+              class="text-sm py-2 px-4 rounded-md border border-amber-500 bg-transparent hover:bg-amber-500 text-amber-500 hover:text-white transition-all"
             >
               Add Listing
             </button>
           </div>
           <div class="space-x-4">
-            <button class="text-lg">Sign In</button>
-            <button class="text-lg">Sign Up</button>
+            <button class="text-sm lg:text-lg">Sign In</button>
+            <button class="text-sm lg:text-lg">Sign Up</button>
           </div>
         </div>
       </nav>
     </div>
     <!-- /NavBar ...................................................................-->
     <!-- Start Banner ...............................................................-->
-    <div class="hero-banner relative h-screen">
-      <img
+    <div
+      class="hero-banner relative h-screen bg-center bg-cover"
+      style="background-image: url('./assets/images/hero/hero_4.jpg')"
+    >
+      <!-- <img
         class="h-full w-full object-cover"
         src="./assets/images/hero/hero_4.jpg"
         alt="hero_4"
-      />
+      /> -->
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black/75"></div>
       <!-- /Overlay -->
@@ -55,16 +58,20 @@
           <div class="space-y-6">
             <!-- TEXT -->
             <div class="text-white text-center hero-header">
-              <p class="text-4xl capitalize font-bold mb-4 font-comfortaa">
+              <p
+                class="text-2xl lg:text-4xl capitalize font-bold mb-4 font-comfortaa"
+              >
                 Discover places that people love
               </p>
-              <p class="text-lg">
+              <p class="text-lg w-8/12 mx-auto">
                 We will help you find the best places in the world.
               </p>
             </div>
             <!-- /TEXT -->
             <!-- Inputs -->
-            <div class="flex gap-5">
+            <div
+              class="flex flex-col lg:flex-row items-center justify-center gap-5"
+            >
               <div>
                 <input
                   class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none"
@@ -81,7 +88,7 @@
               </div>
               <div>
                 <button
-                  class="rounded-md py-2.5 px-6 bg-amber-500 text-lg text-white hover:bg-amber-600"
+                  class="rounded-md py-2 lg:py-2.5 px-4 lg:px-6 bg-amber-500 text-lg text-white hover:bg-amber-600"
                 >
                   <span class="material-symbols-outlined align-middle">
                     search
@@ -92,8 +99,10 @@
             </div>
             <!-- /Inputs -->
             <!-- Popular places -->
-            <div>
-              <ul class="flex gap-5 justify-center text-sm text-white">
+            <div class="w-10/12 mx-auto">
+              <ul
+                class="flex flex-wrap gap-5 justify-center text-sm text-white"
+              >
                 <li class="captalize">
                   <a class="hover:text-amber-500" href="#">
                     <span
@@ -168,7 +177,7 @@
       <!-- Popular places -->
       <div class="bg-slate-100 py-32">
         <!-- Container -->
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 md:w-10/12 lg:w-8/12 mx-auto">
           <!-- Title -->
           <div class="text-center mb-12">
             <p class="text-4xl font-bold text-gray-600 pb-3">Popular Places</p>
@@ -176,7 +185,9 @@
           </div>
           <!-- Title -->
           <div>
-            <div class="grid grid-cols-3 gap-10 mx-auto">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto"
+            >
               <!-- Card one -->
               <div
                 class="bg-white rounded-md shadow overflow-hidden hover:shadow-xl transition-all"
@@ -721,7 +732,7 @@
       <!-- Discover By Categories ...................................................-->
       <div class="bg-gray-50 py-32">
         <!-- Container -->
-        <div class="w-8/12 mx-auto">
+        <div class="w-10/12 md:w-8/12 mx-auto">
           <!-- title -->
           <div class="text-center mb-12">
             <p class="text-4xl font-bold text-gray-600 mb-3">
@@ -731,7 +742,9 @@
           </div>
           <!-- /title -->
           <div>
-            <div class="grid grid-cols-4 gap-10">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10"
+            >
               <!-- category -->
               <a
                 href="#"
@@ -875,7 +888,7 @@
       <!-- /Discover By Categories -->
       <!-- Collections ..........................................................-->
       <div class="bg-slate-100 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-10/12 md:w-8/12 mx-auto">
           <!-- title -->
           <div class="text-center mb-12">
             <p class="text-4xl font-bold text-gray-600 mb-3">Collections</p>
@@ -885,7 +898,9 @@
           </div>
           <!-- /title -->
           <div>
-            <div class="grid grid-cols-4 gap-10">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10"
+            >
               <div
                 class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg"
               >
@@ -1040,20 +1055,20 @@
       <!-- /Collections -->
       <!-- Teams .............................................................-->
       <div class="bg-gray-50 py-36 relative">
-        <div class="w-8/12 mx-auto">
-          <div class="flex items-center gap-3">
-            <div class="w-1/2">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
               <div
-                class="food w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-30"
+                class="hidden lg:inline food w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-30"
               ></div>
               <div
-                class="w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"
+                class="hidden lg:inline w-1/2 bg-gradient-to-l from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"
               ></div>
-              <div class="flex gap-12">
+              <div class="flex justify-center gap-12">
                 <div class="flex flex-col gap-12">
                   <div class="relative">
                     <img
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                       src="./assets/images/team/team-01.jpg"
                       alt="team-01"
                     />
@@ -1068,7 +1083,7 @@
                   <!-- /team member -->
                   <div class="relative">
                     <img
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                       src="./assets/images/team/team-02.webp"
                       alt="team-02"
                     />
@@ -1085,7 +1100,7 @@
                 <div class="flex flex-col gap-12 mt-12">
                   <div class="relative">
                     <img
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                       src="./assets/images/team/team-03.webp"
                       alt="team-03"
                     />
@@ -1100,7 +1115,7 @@
                   <!-- /team member -->
                   <div class="relative">
                     <img
-                      class="w-48 h-60 object-cover rounded-md shadow-md"
+                      class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md"
                       src="./assets/images/team/team-04.webp"
                       alt="team-04"
                     />
@@ -1117,12 +1132,12 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
               <p class="text-sm fon-bold uppercase text-indigo-500 mb-1">
                 Our Support Heroes
               </p>
               <p class="text-4xl font-bold text-gray-600">Meet The Team</p>
-              <p class="mt-3 text-gray-500 text-lg">
+              <p class="mt-3 text-gray-500 text-lg lg:text-base xl:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
                 iste quae ad! Assumenda, magnam fugiat natus dolore eveniet,
                 blanditiis, ipsam dolorum corrupti aspernatur cum ipsum officia
@@ -1130,7 +1145,7 @@
               </p>
               <div class="mt-8">
                 <button
-                  class="mr-4 py-2 px-3 border-2 border-gray-500 fon-semibold text-gray-500 shadow-md hover:bg-gray-500 hover:text-white rounded-full transition-colors"
+                  class="mr-4 mb-2 py-2 px-3 border-2 border-gray-500 fon-semibold text-gray-500 shadow-md hover:bg-gray-500 hover:text-white rounded-full transition-colors"
                 >
                   <span class="material-symbols-outlined align-middle mr-1">
                     groups
@@ -1138,7 +1153,7 @@
                   Meet Us
                 </button>
                 <button
-                  class="mr-4 py-2 px-3 border-2 bg-blue-500 border-blue-500 fon-semibold text-white shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 rounded-full transition-colors"
+                  class="mr-4 mb-2 py-2 px-3 border-2 bg-blue-500 border-blue-500 fon-semibold text-white shadow-md hover:bg-blue-600 hover:text-white hover:border-blue-600 rounded-full transition-colors"
                 >
                   <span class="material-symbols-outlined align-middle mr-1">
                     read_more
@@ -1156,17 +1171,19 @@
         <div
           class="bg-slate-50 w-8/12 absolute bottom-0 right-0 top-16 -z-10 rounded-tl-3xl"
         ></div>
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <!-- Title -->
-          <div class="mb-20">
-            <p class="text-4xl font-bold font-libre text-gray-600 w-5/12">
+          <div class="mb-10 md:mb-20">
+            <p
+              class="text-3xl md:text-4xl font-bold font-libre text-gray-600 w-full lg:w-5/12"
+            >
               What Our Customer Are Saying
             </p>
           </div>
           <!-- /Title -->
-          <div class="flex">
-            <div class="w-1/2">
-              <div class="w-10/12 h-72 relative mb-6">
+          <div class="flex flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
+              <div class="w-full md:w-10/12 h-72 relative mb-6">
                 <div
                   class="absolute dot opacity-30 h-48 w-32 -top-24 -left-16 -z-10"
                 ></div>
@@ -1209,7 +1226,7 @@
                 </button>
               </div>
             </div>
-            <div class="w-1/2 text-gray-600">
+            <div class="w-full lg:w-1/2 text-gray-600">
               <p class="text-xl font-bold capitalize mb-3">
                 Help Us Improve Our Productivity
               </p>
@@ -1229,108 +1246,100 @@
       </div>
       <!-- /End Testimonials -->
       <!-- Start Contact Us ..................................................-->
-      <div class="bg-slate-100 py-32">
-        <div class="w-9/12 mx-auto">
-          <div class="shadow-lg rounded-xl relative">
-            <img
-              class="w-full h-[46rem] object-cover rounded-xl"
-              src="./assets/images/contact-us/photo-1524069290683-0457abfe42c3.jpg"
-              alt="Contact Us"
-            />
-            <div class="bg-black/70 absolute inset-0 h-full rounded-xl"></div>
-            <div class="absolute right-8 left-8 top-24">
-              <div class="flex items-end">
-                <div class="w-1/2 text-gray-100">
-                  <div class="mb-5">
-                    <p class="text-4xl font-bold font-comfortaa mb-5">
-                      Find Us
-                    </p>
-                    <div class="flex gap-6">
-                      <div class="border-r border-white pr-4">
-                        <p class="font-bold text-2xl">New York</p>
-                        <p class="text-sm">
-                          Derrick Street Boston, MA 02130 USA
-                        </p>
-                      </div>
-                      <div class="border-r border-white pr-4">
-                        <p class="font-bold text-2xl">California</p>
-                        <p class="text-sm">
-                          Derrick Street Boston, MA 02130 USA
-                        </p>
-                      </div>
-                      <div>
-                        <p class="font-bold text-2xl">Delhi</p>
-                        <p class="text-sm">
-                          Derrick Street Boston, MA 02130 USA
-                        </p>
-                      </div>
+      <div class="bg-slate-100 lg:py-32">
+        <div class="w-full lg:w-11/12 xl:w-9/12 mx-auto">
+          <div
+            class="shadow-lg lg:rounded-xl relative py-12 px-12 bg-cover bg-center z-10"
+            style="
+              background-image: url('./assets/images/contact-us/photo-1524069290683-0457abfe42c3.jpg');
+            "
+          >
+            <div
+              class="bg-black/70 absolute inset-0 h-full lg:rounded-xl -z-10"
+            ></div>
+            <div class="flex flex-col-reverse lg:flex-row gap-5 gap-12 lg:gap-0 items-end">
+              <div class="w-full lg:w-1/2 text-gray-100">
+                <div class="mb-5">
+                  <p class="text-4xl font-bold font-comfortaa mb-5">Find Us</p>
+                  <div class="flex gap-6">
+                    <div class="border-r border-white pr-4">
+                      <p class="font-bold text-2xl">New York</p>
+                      <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                    </div>
+                    <div class="border-r border-white pr-4">
+                      <p class="font-bold text-2xl">California</p>
+                      <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                    </div>
+                    <div>
+                      <p class="font-bold text-2xl">Delhi</p>
+                      <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
                     </div>
                   </div>
                 </div>
-                <div class="w-1/2">
-                  <div
-                    class="bg-white max-w-lg rounded-md shadow p-6 ml-auto space-y-6"
-                  >
-                    <div>
-                      <p class="text-4xl font-bold font-monte mb-4">
-                        Get In Touch
-                      </p>
-                      <p>Need Help or have some feedback for us?</p>
-                      <p>Fill out the form below to contact our team.</p>
-                    </div>
-                    <form action="" class="space-y-4">
-                      <div class="flex text-gray-600 gap-10">
-                        <div>
-                          <label for="firstname">First Name</label>
-                          <input
-                            class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                            type="text"
-                            id="firstname"
-                            placeholder="MO lemine"
-                          />
-                        </div>
-                        <div>
-                          <label for="lastname">Last Name</label>
-                          <input
-                            class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                            type="text"
-                            id="lastname"
-                            placeholder="Hamdinou"
-                          />
-                        </div>
-                      </div>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <div
+                  class="bg-white max-w-lg rounded-md shadow p-6 mx-auto lg:ml-auto space-y-6 text-gray-600"
+                >
+                  <div>
+                    <p class="text-4xl font-bold font-monte mb-4">
+                      Get In Touch
+                    </p>
+                    <p>Need Help or have some feedback for us?</p>
+                    <p>Fill out the form below to contact our team.</p>
+                  </div>
+                  <form action="" class="space-y-4">
+                    <div class="flex text-gray-600 gap-10">
                       <div>
-                        <label for="email">Email</label>
+                        <label for="firstname">First Name</label>
                         <input
                           class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                          type="email"
-                          id="email"
-                          placeholder="mail@example.com"
+                          type="text"
+                          id="firstname"
+                          placeholder="MO lemine"
                         />
                       </div>
                       <div>
-                        <label for="message">Message</label>
-                        <textarea
+                        <label for="lastname">Last Name</label>
+                        <input
                           class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
-                          id="message"
-                          rows="4"
-                          placeholder="Good Job! I only have this question..."
-                        ></textarea>
+                          type="text"
+                          id="lastname"
+                          placeholder="Hamdinou"
+                        />
                       </div>
-                      <div>
-                        <button
-                          class="py-2 px-3 rounded-md shadow bg-indigo-600 text-white hover:bg-indigo-500 hover:shadow-xl"
+                    </div>
+                    <div>
+                      <label for="email">Email</label>
+                      <input
+                        class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                        type="email"
+                        id="email"
+                        placeholder="mail@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label for="message">Message</label>
+                      <textarea
+                        class="py-2 px-3 w-full text-gray-600 rounded-md border mt-0.5"
+                        id="message"
+                        rows="4"
+                        placeholder="Good Job! I only have this question..."
+                      ></textarea>
+                    </div>
+                    <div>
+                      <button
+                        class="py-2 px-3 rounded-md shadow bg-indigo-600 text-white hover:bg-indigo-500 hover:shadow-xl"
+                      >
+                        <span
+                          class="material-symbols-outlined align-middle mr-1"
                         >
-                          <span
-                            class="material-symbols-outlined align-middle mr-1"
-                          >
-                            local_shipping
-                          </span>
-                          Get In Touch
-                        </button>
-                      </div>
-                    </form>
-                  </div>
+                          local_shipping
+                        </span>
+                        Get In Touch
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -1340,7 +1349,7 @@
       <!-- /End Contact Us -->
       <!-- Start Feactures ...................................................-->
       <div class="bg-slate-50 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <div class="text-center text-gray-600 mb-12">
             <p class="text-4xl font-bold mb-2">Our Valuable Features</p>
             <p>
@@ -1349,8 +1358,12 @@
             </p>
           </div>
           <!-- Cards container -->
-          <div class="grid grid-cols-3 gap-16">
-            <div class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 xl:gap-16"
+          >
+            <div
+              class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all"
+            >
               <button
                 class="text-gray-600 bg-slate-100 p-2 rounded-md shadow-md"
               >
@@ -1381,7 +1394,9 @@
               </p>
             </div>
             <!-- feature box -->
-            <div class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all">
+            <div
+              class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all"
+            >
               <button
                 class="text-gray-600 bg-slate-100 p-2 rounded-md shadow-md"
               >
@@ -1408,7 +1423,9 @@
               </p>
             </div>
             <!-- feature box -->
-            <div class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all">
+            <div
+              class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all"
+            >
               <button
                 class="text-gray-600 bg-slate-100 p-2 rounded-md shadow-md"
               >
@@ -1435,7 +1452,9 @@
               </p>
             </div>
             <!-- feature box -->
-            <div class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all">
+            <div
+              class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all"
+            >
               <button
                 class="text-gray-600 bg-slate-100 p-2 rounded-md shadow-md"
               >
@@ -1462,7 +1481,9 @@
               </p>
             </div>
             <!-- feature box -->
-            <div class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all">
+            <div
+              class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all"
+            >
               <button
                 class="text-gray-600 bg-slate-100 p-2 rounded-md shadow-md"
               >
@@ -1489,7 +1510,9 @@
               </p>
             </div>
             <!-- feature box -->
-            <div class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all">
+            <div
+              class="p-4 rounded-md hover:bg-white hover:shadow-lg transition-all"
+            >
               <button
                 class="text-gray-600 bg-slate-100 p-2 rounded-md shadow-md"
               >
@@ -1527,14 +1550,14 @@
       <!-- /End Features -->
       <!-- Start Loading Section .............................................-->
       <div class="bg-slate-100 py-32">
-        <div class="w-8/12 mx-auto">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
           <div class="text-center text-gray-600 mb-12">
             <p class="text-4xl font-bold mb-2">Blog Posts</p>
             <p class="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed
             </p>
           </div>
-          <div class="grid grid-cols-3 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div
               class="bg-white rounded-md shadow p-5 flex flex-col items-center justify-center gap-5"
             >
@@ -1736,8 +1759,10 @@
       <!-- /Loading Section -->
       <!-- Start Footer .....................................................-->
       <footer class="bg-white py-14 border-t">
-        <div class="w-8/12 mx-auto">
-          <div class="flex justify-between py-12">
+        <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+          <div
+            class="flex flex-col lg:flex-row justify-between py-0 lg:py-12 gap-12 lg:gap-0"
+          >
             <div>
               <p class="uppercase font-bold mb-2 text-gray-600">Company</p>
               <ul>
