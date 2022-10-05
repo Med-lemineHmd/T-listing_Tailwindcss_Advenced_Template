@@ -3,9 +3,27 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "-": "^0.0.1"
+    "-": "^0.0.1",
+    "gh-pages": "^4.0.0",
+    "save-dev": "^0.0.1-security"
   },
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch"
-  }
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "name": "tlisting",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Med-lemineHmd/T-listing_Tailwindcss_Advenced_Template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Med-lemineHmd/T-listing_Tailwindcss_Advenced_Template/issues"
+  },
+  "homepage": "https://github.com/Med-lemineHmd/T-listing_Tailwindcss_Advenced_Template#readme",
+  "description": ""
 }
