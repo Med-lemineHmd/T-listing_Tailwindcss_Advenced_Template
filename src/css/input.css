@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .trans-nav {
+    @apply bg-transparent;
+  }
+  .bg-nav {
+    @apply backdrop-filter backdrop-blur bg-white bg-opacity-30 shadow;
+  }
+}
+
 html {
   font-family: Nunito, sans-serif;
 }

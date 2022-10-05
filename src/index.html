@@ -14,29 +14,33 @@
   </head>
   <body>
     <!-- Start NavBar ...............................................................-->
-    <nav class="absolute right-0 left-0 z-10 text-white">
-      <div
-        class="w-9/12 mx-auto py-5 flex justify-between items-center font-comfortaa"
+    <div class="sticky top-0 z-50">
+      <nav
+        class="navbar absolute right-0 left-0 z-10 trans-nav text-white transition-all"
       >
-        <div>
-          <a class="text-lg" href="#">Tail Listing</a>
+        <div
+          class="w-9/12 mx-auto py-5 flex justify-between items-center font-comfortaa"
+        >
+          <div>
+            <a class="text-lg" href="#">Tail Listing</a>
+          </div>
+          <div>
+            <button
+              class="py-2 px-4 rounded-md border border-amber-500 bg-transparent hover:bg-amber-500 text-amber-500 hover:text-white transition-all"
+            >
+              Add Listing
+            </button>
+          </div>
+          <div class="space-x-4">
+            <button class="text-lg">Sign In</button>
+            <button class="text-lg">Sign Up</button>
+          </div>
         </div>
-        <div>
-          <button
-            class="py-2 px-4 rounded-md border border-amber-500 bg-transparent hover:bg-amber-500 text-amber-500 hover:text-white transition-all"
-          >
-            Add Listing
-          </button>
-        </div>
-        <div class="space-x-4">
-          <button class="text-lg">Sign In</button>
-          <button class="text-lg">Sign Up</button>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- /NavBar ...................................................................-->
     <!-- Start Banner ...............................................................-->
-    <div class="relative h-screen">
+    <div class="hero-banner relative h-screen">
       <img
         class="h-full w-full object-cover"
         src="./assets/images/hero/hero_4.jpg"
@@ -50,7 +54,7 @@
           <!-- Container -->
           <div class="space-y-6">
             <!-- TEXT -->
-            <div class="text-white text-center">
+            <div class="text-white text-center hero-header">
               <p class="text-4xl capitalize font-bold mb-4 font-comfortaa">
                 Discover places that people love
               </p>
@@ -1760,5 +1764,34 @@
       <!-- /End Footer -->
     </div>
     <!-- /Body(Main-content) ...............................................................-->
+    <!-- Script ............................................................................-->
+    <script>
+      window.addEventListener("scroll", listenScroll);
+      function listenScroll() {
+        const navbar = document.querySelector(".navbar");
+        //get the reference
+        const heroHeader = document.querySelector(".hero-header");
+        const referencePassed =
+          window.scrollY + heroHeader.getBoundingClientRect().height >
+          heroHeader.offsetTop; //check if the user passes the reference point
+        const navClassNames = referencePassed
+          ? ["trans-nav", "bg-nav"]
+          : ["bg-nav", "trans-nav"];
+        navbar.classList.replace(...navClassNames);
+
+        // Navbar text color
+        const bannerDimension = document
+          .querySelector(".hero-banner")
+          .getBoundingClientRect();
+        const bannerPassed = bannerDimension.top + bannerDimension.height <= 38; // check if hero banner image is passed
+        const navTextColor = bannerPassed
+          ? ["text-white", "text-gray-700"]
+          : ["text-gray-700", "text-white"];
+
+        navbar.classList.replace(...navTextColor);
+      }
+      listenScroll();
+    </script>
+    <!-- /Script -->
   </body>
 </html>
